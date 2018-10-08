@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 struct serviceURL {
-let baseURL = "http://"
+static let baseURL = "http://"
     
  
     

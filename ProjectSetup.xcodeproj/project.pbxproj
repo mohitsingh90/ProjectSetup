@@ -25,6 +25,8 @@
 		4C47867C2165EC9900598EDF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C47867B2165EC9900598EDF /* BaseViewController.swift */; };
 		4C4786822165EE3000598EDF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4786812165EE2F00598EDF /* Utilities.swift */; };
 		4CA79C902165F38400C07440 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA79C8F2165F38400C07440 /* Toast.swift */; };
+		4CD12300216B5943008931BC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD122FF216B5943008931BC /* GradientView.swift */; };
+		4CD12302216B61C1008931BC /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12301216B61C1008931BC /* AppHelper.swift */; };
 		7F7F7A48F9BCCCFEB3752656 /* Pods_ProjectSetupUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1C7407DB97C890BAE2C957 /* Pods_ProjectSetupUITests.framework */; };
 		9CF75D65C3B2E15F680C450C /* Pods_ProjectSetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE069A81AB841E7E2C50AA5 /* Pods_ProjectSetup.framework */; };
 		B0B4798385078C29339E5E0B /* Pods_ProjectSetupTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70428A0A165EEB255D829B /* Pods_ProjectSetupTests.framework */; };
@@ -76,6 +78,8 @@
 		4C47867B2165EC9900598EDF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4C4786812165EE2F00598EDF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4CA79C8F2165F38400C07440 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		4CD122FF216B5943008931BC /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4CD12301216B61C1008931BC /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		7529DBEBD01D6F5DBD3EE52A /* Pods-ProjectSetup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectSetup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectSetup/Pods-ProjectSetup.debug.xcconfig"; sourceTree = "<group>"; };
 		7F70428A0A165EEB255D829B /* Pods_ProjectSetupTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectSetupTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8116E233B7178A8C178B6486 /* Pods-ProjectSetupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectSetupUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectSetupUITests/Pods-ProjectSetupUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,13 +145,7 @@
 				4C47867E2165ECB900598EDF /* View */,
 				4C47867D2165ECAC00598EDF /* Controller */,
 				4C4786692165EC4500598EDF /* ThirdParty */,
-				4C4786712165EC5F00598EDF /* Extension.swift */,
-				4C4786812165EE2F00598EDF /* Utilities.swift */,
-				4C4786752165EC7800598EDF /* Defines.swift */,
-				4C4786732165EC6600598EDF /* Reachability.swift */,
-				4C4786772165EC8200598EDF /* Services.swift */,
-				4C47867B2165EC9900598EDF /* BaseViewController.swift */,
-				4C4786792165EC8900598EDF /* Strings.swift */,
+				4CD12303216B6340008931BC /* HelperFiles */,
 				4C47863C2165EBF800598EDF /* Main.storyboard */,
 				4C4786422165EBFB00598EDF /* Assets.xcassets */,
 				4C4786442165EBFB00598EDF /* LaunchScreen.storyboard */,
@@ -178,6 +176,7 @@
 		4C4786692165EC4500598EDF /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				4CD122FF216B5943008931BC /* GradientView.swift */,
 				4C47866A2165EC4500598EDF /* SwiftyJSON.swift */,
 				4C47866C2165EC4500598EDF /* MIBadgeButton.swift */,
 				4CA79C8F2165F38400C07440 /* Toast.swift */,
@@ -213,6 +212,21 @@
 				4C4786382165EBF800598EDF /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4CD12303216B6340008931BC /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4C4786712165EC5F00598EDF /* Extension.swift */,
+				4C4786812165EE2F00598EDF /* Utilities.swift */,
+				4C4786752165EC7800598EDF /* Defines.swift */,
+				4C4786732165EC6600598EDF /* Reachability.swift */,
+				4C4786772165EC8200598EDF /* Services.swift */,
+				4C47867B2165EC9900598EDF /* BaseViewController.swift */,
+				4C4786792165EC8900598EDF /* Strings.swift */,
+				4CD12301216B61C1008931BC /* AppHelper.swift */,
+			);
+			path = HelperFiles;
 			sourceTree = "<group>";
 		};
 		68176A09E329416E74B713CF /* Frameworks */ = {
@@ -384,12 +398,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LoadingPlaceholderView/LoadingPlaceholderView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LoadingPlaceholderView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -536,11 +552,13 @@
 				4C4786412165EBF800598EDF /* ProjectSetup.xcdatamodeld in Sources */,
 				4C47867A2165EC8900598EDF /* Strings.swift in Sources */,
 				4C4786722165EC5F00598EDF /* Extension.swift in Sources */,
+				4CD12300216B5943008931BC /* GradientView.swift in Sources */,
 				4C4786822165EE3000598EDF /* Utilities.swift in Sources */,
 				4C47866F2165EC4500598EDF /* MIBadgeButton.swift in Sources */,
 				4C47867C2165EC9900598EDF /* BaseViewController.swift in Sources */,
 				4C47863B2165EBF800598EDF /* ViewController.swift in Sources */,
 				4C4786782165EC8200598EDF /* Services.swift in Sources */,
+				4CD12302216B61C1008931BC /* AppHelper.swift in Sources */,
 				4C4786762165EC7800598EDF /* Defines.swift in Sources */,
 				4C4786392165EBF800598EDF /* AppDelegate.swift in Sources */,
 				4C4786742165EC6600598EDF /* Reachability.swift in Sources */,
