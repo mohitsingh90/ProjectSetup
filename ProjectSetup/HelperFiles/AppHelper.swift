@@ -37,6 +37,15 @@ class AppHelper{
     }
     
     
+    func removeObjects() {
+        
+        let defaults = UserDefaults.standard
+        let dictionary = defaults.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            defaults.removeObject(forKey: key)
+        }
+        
+    }
     
     
     

@@ -11,7 +11,7 @@ import Alamofire
 
 class Services: NSObject {
     class func requestGETURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void) {
-        if Reachability.isConnectedToNetwork(){
+        if Reachability01.isConnectedToNetwork(){
           
         Alamofire.request(strURL).responseJSON { (responseObject) -> Void in
             

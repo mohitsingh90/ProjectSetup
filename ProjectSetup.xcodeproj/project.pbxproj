@@ -18,12 +18,12 @@
 		4C47866E2165EC4500598EDF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C47866A2165EC4500598EDF /* SwiftyJSON.swift */; };
 		4C47866F2165EC4500598EDF /* MIBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C47866C2165EC4500598EDF /* MIBadgeButton.swift */; };
 		4C4786722165EC5F00598EDF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4786712165EC5F00598EDF /* Extension.swift */; };
-		4C4786742165EC6600598EDF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4786732165EC6600598EDF /* Reachability.swift */; };
 		4C4786762165EC7800598EDF /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4786752165EC7800598EDF /* Defines.swift */; };
 		4C4786782165EC8200598EDF /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4786772165EC8200598EDF /* Services.swift */; };
 		4C47867A2165EC8900598EDF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4786792165EC8900598EDF /* Strings.swift */; };
 		4C47867C2165EC9900598EDF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C47867B2165EC9900598EDF /* BaseViewController.swift */; };
 		4C4786822165EE3000598EDF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4786812165EE2F00598EDF /* Utilities.swift */; };
+		4C8B4328216C851200D17D60 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B4327216C851200D17D60 /* Reachability.swift */; };
 		4CA79C902165F38400C07440 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA79C8F2165F38400C07440 /* Toast.swift */; };
 		4CD12300216B5943008931BC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD122FF216B5943008931BC /* GradientView.swift */; };
 		4CD12302216B61C1008931BC /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12301216B61C1008931BC /* AppHelper.swift */; };
@@ -71,12 +71,12 @@
 		4C47866A2165EC4500598EDF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		4C47866C2165EC4500598EDF /* MIBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIBadgeButton.swift; sourceTree = "<group>"; };
 		4C4786712165EC5F00598EDF /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		4C4786732165EC6600598EDF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4C4786752165EC7800598EDF /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		4C4786772165EC8200598EDF /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		4C4786792165EC8900598EDF /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		4C47867B2165EC9900598EDF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4C4786812165EE2F00598EDF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		4C8B4327216C851200D17D60 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4CA79C8F2165F38400C07440 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		4CD122FF216B5943008931BC /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4CD12301216B61C1008931BC /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
@@ -217,10 +217,10 @@
 		4CD12303216B6340008931BC /* HelperFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4C8B4327216C851200D17D60 /* Reachability.swift */,
 				4C4786712165EC5F00598EDF /* Extension.swift */,
 				4C4786812165EE2F00598EDF /* Utilities.swift */,
 				4C4786752165EC7800598EDF /* Defines.swift */,
-				4C4786732165EC6600598EDF /* Reachability.swift */,
 				4C4786772165EC8200598EDF /* Services.swift */,
 				4C47867B2165EC9900598EDF /* BaseViewController.swift */,
 				4C4786792165EC8900598EDF /* Strings.swift */,
@@ -399,6 +399,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/LoadingPlaceholderView/LoadingPlaceholderView.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -406,6 +407,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LoadingPlaceholderView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -556,12 +558,12 @@
 				4C4786822165EE3000598EDF /* Utilities.swift in Sources */,
 				4C47866F2165EC4500598EDF /* MIBadgeButton.swift in Sources */,
 				4C47867C2165EC9900598EDF /* BaseViewController.swift in Sources */,
+				4C8B4328216C851200D17D60 /* Reachability.swift in Sources */,
 				4C47863B2165EBF800598EDF /* ViewController.swift in Sources */,
 				4C4786782165EC8200598EDF /* Services.swift in Sources */,
 				4CD12302216B61C1008931BC /* AppHelper.swift in Sources */,
 				4C4786762165EC7800598EDF /* Defines.swift in Sources */,
 				4C4786392165EBF800598EDF /* AppDelegate.swift in Sources */,
-				4C4786742165EC6600598EDF /* Reachability.swift in Sources */,
 				4C47866E2165EC4500598EDF /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
