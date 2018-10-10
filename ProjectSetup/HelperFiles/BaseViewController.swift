@@ -109,10 +109,14 @@ class BaseViewController: UIViewController {
         switch reachability.connection {
         case .wifi:
             print("Reachable via WiFi")
+             self.view.makeToast(internetConnected_wifi)
         case .cellular:
             print("Reachable via Cellular")
+             self.view.makeToast(internetConnected_cell)
         case .none:
             print("Network not reachable")
+            
+            self.view.makeToast(internetConnectionError)
         }
     }
     

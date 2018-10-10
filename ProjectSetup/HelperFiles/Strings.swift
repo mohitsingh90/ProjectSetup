@@ -12,3 +12,7 @@ import Foundation
 let internetConnectionError = "Internet Connection not Available!"
 
 
+//Message
+
+let internetConnected_wifi = "Internet Connected"
+let internetConnected_cell = "Internet Connected"

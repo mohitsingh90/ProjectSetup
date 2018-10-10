@@ -161,3 +161,14 @@ extension UIColor {
         return nil
     }
 }
+extension String{
+    func convertHtml() -> NSAttributedString{
+        guard let data = data(using: .utf16) else { return NSAttributedString() }
+        do{
+            return try NSAttributedString(data: data, options: [NSAttributedString.DocumentReadingOptionKey.documentType:  NSAttributedString.DocumentType.html,  NSAttributedString.DocumentReadingOptionKey.characterEncoding:String.Encoding.utf16.rawValue], documentAttributes: nil)
+            
+        }catch{
+            return NSAttributedString()
+        }
+    }
+}

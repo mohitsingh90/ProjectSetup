@@ -176,6 +176,7 @@
 		4C4786692165EC4500598EDF /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				4C8B4327216C851200D17D60 /* Reachability.swift */,
 				4CD122FF216B5943008931BC /* GradientView.swift */,
 				4C47866A2165EC4500598EDF /* SwiftyJSON.swift */,
 				4C47866C2165EC4500598EDF /* MIBadgeButton.swift */,
@@ -217,7 +218,6 @@
 		4CD12303216B6340008931BC /* HelperFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4C8B4327216C851200D17D60 /* Reachability.swift */,
 				4C4786712165EC5F00598EDF /* Extension.swift */,
 				4C4786812165EE2F00598EDF /* Utilities.swift */,
 				4C4786752165EC7800598EDF /* Defines.swift */,
