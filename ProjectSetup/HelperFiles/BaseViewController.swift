@@ -121,5 +121,23 @@ class BaseViewController: UIViewController {
     }
     
     
+    
+    // Create radio Button From button
+    func createButton(button:UIButton,unselectedImage:String,selectedImage:String){
+    
+        
+        if button.image(for: .normal) == UIImage(named: unselectedImage){
+            
+            button.setImage(UIImage(named: selectedImage), for: .normal)
+            
+        }else{
+            
+            button.setImage(UIImage(named: unselectedImage), for: .normal)
+            
+        }
+        
+        
+    }
+    
    
 }
